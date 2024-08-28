@@ -19,7 +19,7 @@ Today's class is a digest of the following resources:
 
 -   About the course: [STAT 545 Video Series Introduction](https://www.youtube.com/watch?v=6REhJVsbbAM)
 -   Overview of coding a data analysis: [STAT 545 Episode 1-A: Coding your Analysis for Success](https://youtu.be/91LmBj29-Sc)
--   Practice some R syntax and jupyter: Worksheet A1 ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a01.ipynb); [viewable](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a01.ipynb))
+-   Practice some R syntax and jupyter: Worksheet A1 ([.ipynb](https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/worksheets/worksheet_a01.ipynb))
 
 Some additional resources that you might find useful:
 
