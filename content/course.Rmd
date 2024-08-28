@@ -1,0 +1,100 @@
+---
+title: "BIOL 4110 Navigation Dashboard"
+output: html_document
+---
+
+```{r, message = FALSE, warning = FALSE, echo = FALSE}
+library(tidyverse)
+library(lubridate)
+source(here::here("content", "dates.R"))
+```
+
+Use this page to navigate your way through BIOL4110.
+
+This page was last updated on `r format(Sys.Date(), "%a, %b %d")`.
+
+# Slack
+
+Slack channel specifically for students: <https://biol4110.slack.com/>
+
+-   Invite link is on Courselink.
+-   Be sure to be part of the `#announcements` channel to receive official course announcements!
+-   Please do not send private questions to instructors individually! -- use the `#general` channel instead.
+-   Slack communication guidelines here: <https://stat545.stat.ubc.ca/slack_communication/>
+
+# Topics
+
+### Part A
+
+| Date                                       | Topic                                                                                                                                  | Worksheet and pre-work                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------|-------------|----------------------------------------------|
+| `r format(dates_545a[1] , "%a, %b %d")`    | [Installation](/notes/notes-a00)                                                                                                       | Follow [installation instructions](/notes/notes-a00).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `r format(dates_545a[1+1] , "%a, %b %d")`  | [Intro to STAT 545 and R](/notes/notes-a01)                                                                                            | Worksheet A1 ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a01.ipynb); [viewable](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a01.ipynb); [zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a01.ipynb.zip)). Worksheet A1 solutions ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a01_solutions.ipynb); [viewable](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a01_solutions.ipynb)) |
+| `r format(dates_545a[2+1] , "%a, %b %d")`  | [Authoring and Reproducibility](/notes/notes-a03)                                                                                      | Make sure you have completed Step 3 of the [installation instructions](/notes/notes-a00).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `r format(dates_545a[3+1] , "%a, %b %d")`  | [Version Control](/notes/notes-a02)                                                                                                    | Make sure you have completed Step 3 of the [installation instructions](/notes/notes-a00).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `r format(dates_545a[4+1] , "%a, %b %d")`  | [Data Manipulation with dplyr](/notes/notes-a04)                                                                                       | Worksheet A2 ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a02.ipynb); [viewable](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a02.ipynb); [zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a02.ipynb.zip)) (Due Tue Sept 24 at 17:00 PT)                                                                                                                                                                                                                                                        |
+| `r format(dates_545a[5+1] , "%a, %b %d")`  | (Data Manipulation with dplyr, continued)                                                                                              | Worksheet A2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `r format(dates_545a[6+1] , "%a, %b %d")`  | [Graphing](/notes/notes-a06)                                                                                                           | Worksheet A3 ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a03.ipynb); [viewable](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a03.ipynb); [zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a03.ipynb.zip)) (Due Tue Oct 1 at 17:00 PT)                                                                                                                                                                                                                                                          |
+| `r format(dates_545a[7+1] , "%a, %b %d")`  | (Graphing, continued)                                                                                                                  | Worksheet A3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `r format(dates_545a[8+1] , "%a, %b %d")`  | [Tidy Data](/notes/notes-a08)                                                                                                          | Worksheet A4 ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a04.ipynb); [viewable](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a04.ipynb); [zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a04.ipynb.zip)) (Due Thurs Oct 10 at 17:00 PT)                                                                                                                                                                                                                                                       |
+| `r format(dates_545a[9+1] , "%a, %b %d")`  | (Tidy Data, continued)                                                                                                                 | Worksheet A4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `r format(dates_545a[10+1] , "%a, %b %d")` | [Model Fitting](/notes/notes-a09)                                                                                                      | Worksheet A4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| `r format(dates_545a[11+1], "%a, %b %d")`  | [Factors and Dates](/notes/notes-a10)                                                                                                  | Worksheet A5 ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a05.ipynb); [viewable](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a05.ipynb); [zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a05.ipynb.zip)) (Due Thurs Oct 24 at 17:00 PT)                                                                                                                                                                                                                                                       |
+| `r format(dates_545a[12+1], "%a, %b %d")`  | [Reading and Writing Data](/notes/notes-a12) and [Tibble Joins](/notes/notes-a11) <!-- [Reading and Writing Data](/notes/notes-a12)--> | Worksheet A5 <!-- Worksheet A6 ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a06.ipynb); [viewable](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a06.ipynb); [zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a06.ipynb.zip))   -->                                                                                                                                                                                                                                                              |
+| `r format(dates_545a[13+1], "%a, %b %d")`  | Review and Work Session                                                                                                                | MDA and Worksheet 5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+# Worksheets
+
+Options for working on these worksheets:
+
+-   Edit them with instances of jupyterlab or jupyter notebook that are installed on your own computer. (BEST)
+-   Edit them with Google Colab: <https://research.google.com/colaboratory/> (LESS PREFERABLE)
+
+*Submit the worksheets by uploading your .ipynb file to the corresponding canvas assignment slot*.
+
+*To get full marks for each formative worksheet, you must successfully answer at least 50% of all autograded questions.*
+
+### Part A
+
+| Worksheet    | Download                                                                                                               | View                                                                                                                    | Zip file                                                                                                              | Deadline                                                                                                                                                                                                                                                                                                             |     |
+|------------|------------|------------|------------|------------|---------------|
+| Worksheet A1 | [.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a01.ipynb) | [view it on GitHub](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a01.ipynb) | [Download zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a01.ipynb.zip) | NA <!-- **not for submission.** Solutions ([.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a01_solutions.ipynb), [view it on Github](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a01_solutions.ipynb)). --> |     |
+| Worksheet A2 | [.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a02.ipynb) | [view it on GitHub](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a02.ipynb) | [Download zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a02.ipynb.zip) | **Tuesday, September 24, 2024 at 17:00 PT**                                                                                                                                                                                                                                                                          |     |
+| Worksheet A3 | [.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a03.ipynb) | [view it on GitHub](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a03.ipynb) | [Download zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a03.ipynb.zip) | **Tuesday, October 1, 2024 at 17:00 PT**                                                                                                                                                                                                                                                                             |     |
+| Worksheet A4 | [.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a04.ipynb) | [view it on GitHub](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a04.ipynb) | [Download zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a04.ipynb.zip) | **Thursday, Oct 10, 2024 at 17:00 PT**                                                                                                                                                                                                                                                                               |     |
+| Worksheet A5 | [.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a05.ipynb) | [view it on GitHub](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a05.ipynb) | [Download zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a05.ipynb.zip) | **Thursday, Oct 24, 2024 at 17:00 PT**                                                                                                                                                                                                                                                                               |     |
+
+```{=html}
+<!--                                                         
+| Worksheet A6 | [.ipynb](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/worksheets/worksheet_a06.ipynb) | [view it on GitHub](https://github.com/UBC-STAT/stat545.stat.ubc.ca/blob/master/content/worksheets/worksheet_a06.ipynb) | [Download zip](https://github.com/UBC-STAT/stat545.stat.ubc.ca/raw/master/content/worksheets/worksheet_a06.ipynb.zip) | 10                    | **Friday, Oct 25, 2024 at 17:00 PT**                                                                                                                                                                                                                                                                  |
+-->
+```
+# Projects
+
+You will be working on various projects on GitHub repositories within a GitHub Organization setup for this course. Some general things you should know:
+
+**How to followup with a project submission**
+
+You'll be given feedback as an Issue in your project repository, sometimes before your grade is posted.
+
+-   Make sure you're `Watch`ing your repository, so that you will be notified by email whenever a new Issue or comment is posted -- you can find this option in the upper-right hand corner of your repository page.
+-   You can use the Issue thread to have a conversation about your assignment results.
+-   If you would like to dispute your grade, this Issue thread is the place to do it, but please do so only within 1 week after the grade has been posted.
+
+## Collaborative Project (Part A)
+
+There are two milestones, each equally weighted:
+
+[Milestone 1](/collaborative-project/milestone1/): Due **Friday, September 20, 2024 at 17:00 PT**.
+
+[Milestone 2](/collaborative-project/milestone2/): Due **Friday, September 27, 2024 at 17:00 PT**.
+
+## Mini-Data Analysis (Part A)
+
+There are two milestones, each equally weighted:
+
+[Milestone 1](/mini-project/mini-project-1/): Due **Friday. October 4, 2024 at 17:00 PT**.
+
+[Milestone 2](/mini-project/mini-project-2/): Due **Wednesday, October 23, 2024 at 17:00 PT**.
+
+## 
