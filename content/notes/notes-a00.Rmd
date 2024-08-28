@@ -1,0 +1,76 @@
+---
+title: "Software and Troubleshooting"
+output: html_document
+---
+
+## Goals
+
+To install and setup key software for use in the course. Instructions are below. 
+
+
+## Note on PC vs Mac
+
+You may encounter some material that implicitly assumes that you are using a Mac. For example, they might point you to a Terminal app, or ask you to use Unix commands like `which` or `ls`. [Here](https://static-bcrf.biochem.wisc.edu/tutorials/unix/basic_unix/dos_and_unix_commands.pdf) is a cheatsheet that helps you convert between Windows command line ("DOS") and Mac command line ("UNIX"). One thing that's missing is the equivalent to Unix's `which`; the closest equivalent in DOS is `where`. 
+
+## Step 1: R and RStudio 
+
+The main programming language used in the class is R and our main IDE (a text editor with helpful features for writing and running code) is RStudio. 
+
+- Follow [Chapter 5](https://happygitwithr.com/install-r-rstudio.html) of Jenny Bryan's "happy git" book to install R and RStudio if you haven't already. 
+
+- If you have R and/or RStudio but haven't updated them in a long time -- e.g. a year or more -- then we recommend that you take the time to update them now. This will make it easier for us to help you troubleshoot throughout the class.  
+
+## Step 2: Jupyter and R Kernel  
+
+You will need another IDE for R (Jupyter Notebook) and an R kernel called 'IR Kernel' (needed to run R code within Jupyter) to work on the autograded worksheets. This is because the autograder we use plays well with Jupyter. 
+
+The following instructions are adapted from [Rich Pauloo](https://richpauloo.github.io/2018-05-16-Installing-the-R-kernel-in-Jupyter-Lab/). 
+
+### For PC 
+
+1. Install Anaconda from [here](https://www.anaconda.com/download/). This gives you Jupyter and the Anaconda Prompt command line tool. 
+
+2. Install and setup the IR Kernel. 
+    - Find the location of `R.exe` on your computer. (The location probably looks something like `C:\Program Files\R\R-4.3.1\bin`.)
+    - Open the Anaconda Prompt application. Enter the following command into Anaconda Prompt: `cd file_path_here`, with `file_path_here` replaced with the location of `R.exe` that you previously found. 
+    - Run R from within Anaconda Prompt by entering in `R.exe`. This opens an R session inside Anaconda Prompt. From here, enter the following commands in sequence: `install.packages("IRkernel")` and `IRkernel::installspec()`. This respectively installs IR Kernel and tells Jupyter where to find IR Kernel.
+    
+3. To verify that everything is working as intended: Open Anaconda Prompt and type in `jupyter lab`. Jupyter Lab should launch and display both a Python and R kernel.
+
+### For OSX: 
+
+1. Install Anaconda from [here](https://www.anaconda.com/download/). This gives you Jupyter. 
+
+2. Install and setup the IR Kernel. 
+  - Open up the Terminal application. Run R from within Terminal by entering in `R`. This opens an R session inside Terminal. From here, enter the following commands in sequence: `install.packages("IRkernel")` and `IRkernel::installspec()`. This respectively installs IR Kernel and tells Jupyter where to find IR Kernel.
+
+3. To verify that everything is working as intended: Open Jupyter Lab (e.g. by opening up the Anacaonda Navigator application and clicking Launch inside the JupyterLab box). Jupyter Lab should launch and display both a Python and R kernel.
+
+## Step 3: Git and Github
+
+Git is a version control software. Github is a cloud-based platform (built on Git) for sharing code. 
+
+-   Register a Github account at github.com. See [Chapter 4](https://happygitwithr.com/github-acct.html)
+
+-   Install git. [Chapter 6](https://happygitwithr.com/install-git.html).
+
+-   Configure git. See [Chapter 7: Introduce yourself to git](https://happygitwithr.com/hello-git.html).
+
+- Get setup with a GitHub Personal Access Token (PAT): this will allow you to sync GitHub with files on your computer.
+
+    -   [Step 1:]{.underline} Create a PAT
+
+        -   Option 1: Go to to <https://github.com/settings/tokens> and click "Generate token". Describe the token's purpose in the Note field, e.g. "personal-macbook" or "vm-for-project-xyz". Select "repo", "user", and "workflow" for scopes.
+
+        -   Option 2: From R, execute `usethis::create_github_token()` (you may have to install the usethis package first by first running `install.packages("usethis")`). Describe the token's purpose in the Note field, e.g. "personal-macbook" or "vm-for-project-xyz".
+
+    -   [Step 2:]{.underline} From R, execute \`gitcreds::gitcreds_set()\` and enter the PAT that you just made when prompted. (You may have to install the gitcreds package first by first running `install.packages("gitcreds")`). That should be it!
+
+    -   [Step 3]{.underline} (**optional but recommended**) Also save the PAT that you just made somewhere secure, like a password manager.
+
+
+
+### Attribution 
+
+By Vincenzo Coia and Jenny Bryan, with inputs from STAT 545 teaching teams. 
+
