@@ -1,10 +1,14 @@
-# BIOL4110-course-website
+# Welcome to BIOL4110
 
-[Installation instructions](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a00.html)
+# Slack
 
-[Class 1 notes](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a01.html)
+Slack channel specifically for students: <https://biol4110.slack.com/>
 
-[Class 2 notes](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a02.html)
+-   Invite link is on Courselink.
+
+-   Be sure to be part of the `#announcements` channel to receive official course announcements!
+
+-   Please do not send private questions to instructors separately -- use the `#general` channel instead.
 
 ## Lecture Schedule
 
