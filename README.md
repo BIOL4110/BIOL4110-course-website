@@ -1,4 +1,4 @@
-# Welcome to BIOL4110
+# BIOL4110 - Ecological Methods
 
 # Welcome!
 
