@@ -12,7 +12,7 @@ Welcome to Ecological (Data Science) Methods! This class is designed to empower 
 
 Attribution and acknowledgments: Much the course material is adapted from [STAT545](https://stat545.com/), the [STAT545 course at UBC](https://stat545.stat.ubc.ca/), and the [Data Carpentry for Biologists course](https://datacarpentry.org/semester-biology/) developed by Ethan White and Zachary Brym, Matt Pennell.
 
-# Slack
+## Slack
 
 Slack channel specifically for students: <https://biol4110.slack.com/>
 
@@ -29,7 +29,7 @@ We will be employing a lot of active learning in this course, as you learn progr
 | Lecture | Topic                         | Lecture notes                                                                                                                              | Supplementary resources |
 |---------------|---------------|---------------|---------------|
 | 1       | Installation                  | [Class 1 notes](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a01.html) |                         |
-| 2       | Introduction to BIOL4110      | [Class 2 notes](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a02.html) |                         |
+| 2       | Introduction to BIOL4110      | [Class 2 notes](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a01.html) |                         |
 | 3       | Authoring and reproducibility |                                                                                                                                            |                         |
 | 4       | Version control               |                                                                                                                                            |                         |
 | 5       | Data manipulation with dplyr  |                                                                                                                                            |                         |
