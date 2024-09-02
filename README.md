@@ -28,12 +28,14 @@ Slack channel specifically for students: <https://biol4110.slack.com/>
 
 -   Please do not send private questions to instructors separately -- use the `#general` channel instead.
 
+-   Please follow these [Slack communication guidelines](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/slack_communication.html).
+
 ## Lecture Schedule
 
 We will be employing a lot of active learning in this course, as you learn programming best by doing! During lecture, we will work in small breakout groups on a lecture worksheet (a Jupyter notebook) that will allow us to practice together.
 
 | Lecture | Topic                                                                                                                                     | Lecture notes                                                                                                                              | Worksheet                                                                                                           | Supplementary resources |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-------------------------|
+|---------------|---------------|---------------|---------------|---------------|
 | 1       | [Installation](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a00.html) | [Class 1 notes](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a00.html) |                                                                                                                     |                         |
 | 2       | Introduction to BIOL4110                                                                                                                  | [Class 2 notes](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/notes-a01.html) | [Worksheet 1](https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/worksheets/worksheet_a01.ipynb) |                         |
 | 3       | Authoring and reproducibility                                                                                                             |                                                                                                                                            |                                                                                                                     |                         |
