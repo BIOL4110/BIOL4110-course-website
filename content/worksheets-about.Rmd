@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the STAT 545 Worksheets!"
+title: "Welcome to the BIOL 4110 Worksheets!"
 output: 
   html_document:
     toc: true
@@ -14,17 +14,11 @@ These worksheets are designed to help you:
 
 __STAT 545A__:
 
-- Percentage of final grade: _10%_
-- Number of Worksheets: _5 graded, 1 ungraded (corresponding to Weeks 1-A and 2-A)._
-- Deadline: _Every Friday by 11:59pm (starting on Week 3-A)_
-- Grading: _To get full marks for each worksheet, you must successfully answer at least 40% of all autograded questions._
+- Percentage of final grade: _15%_
+- Number of Worksheets: _5 graded, 1 ungraded._
+- Deadline: _Check course outline_
+- Grading: _To get full marks for each worksheet, you must successfully answer at least 50% of all autograded questions._
 
-__STAT 545B__:
-
-- Percentage of final grade: _10%_
-- Number of Worksheets: _3 graded_
-- Deadline: _Every Saturday by 11:59pm (starting on Week 1-B)_
-- Grading: _To get full marks for each worksheet, you must successfully answer some pre-specified amount of the autograded questions._
 
 ## Objectives
 
@@ -39,7 +33,7 @@ We envision you interacting with the worksheet at a level appropriate to you, co
 
 ## Downloading the Worksheets
 
-First, you can find the worksheets on the [main navigation dashboard](https://stat545.stat.ubc.ca/course/).
+First, you can find the worksheets on the [main navigation dashboard](https://github.com/BIOL4110/BIOL4110-course-website/tree/main).
 
 How to download the lecture worksheets:
 
@@ -71,11 +65,6 @@ Steps for loading a worksheet __using jupyter lab or jupyter notebook__:
 2. Type `jupyter lab` (or you could use `jupyter notebook`).
 3. Navigate to where you downloaded the worksheet, and open it.
 
-Steps for loading a worksheet __using UBC Syzygy__ (pronounced SIZ-ijee)
-
-1. Go to [ubc.syzygy.ca](https://ubc.syzygy.ca/).
-2. Sign in with your CWL account.
-3. Upload your worksheet file, and open it from there.
 
 Steps for loading a worksheet __using Google Colab__: _TBD_
 
@@ -104,4 +93,4 @@ Here is more info:
 
 ## Submitting your worksheets
 
-Submit your worksheet file to canvas.
+Submit your worksheet file to homework repo on Github.
