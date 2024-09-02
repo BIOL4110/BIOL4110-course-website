@@ -94,3 +94,9 @@ For example, when you feel that your partner is not pulling their weight.
 
 - If posting code, use \`\`\` (backticks). It's way easier to read. Even better, use [`reprex`](https://www.tidyverse.org/help/)
 
+
+
+#### Attribution:
+
+Adapted from STAT 545 Slack [communication guidelines](https://stat545.stat.ubc.ca/slack_communication/)
+
