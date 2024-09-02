@@ -10,7 +10,7 @@ Welcome to Ecological (Data Science) Methods! This class is designed to empower 
 
 -   use R's modern landscape.
 
-Attribution and acknowledgments: Much the course material is adapted from [STAT545](https://stat545.com/), [STAT545 course at UBC](https://stat545.stat.ubc.ca/), and [Data Carpentry for Biologists course](https://datacarpentry.org/semester-biology/) developed by Ethan White and Zachary Brym, Matt Pennell,
+Attribution and acknowledgments: Much the course material is adapted from [STAT545](https://stat545.com/), the [STAT545 course at UBC](https://stat545.stat.ubc.ca/), and the [Data Carpentry for Biologists course](https://datacarpentry.org/semester-biology/) developed by Ethan White and Zachary Brym, Matt Pennell.
 
 # Slack
 
