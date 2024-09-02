@@ -1,5 +1,15 @@
 # Welcome to BIOL4110
 
+# Welcome!
+
+Welcome to Ecological (Data Science) Methods! This class is designed to empower students to wrangle, visualize and analyse ecological data using modern data analysis tools. Student will learn how to:
+
+-   explore, clean, visualize and analyse ecological data
+
+-   make their methods reproducible, reusable, and shareable
+
+-   use R's modern landscape.
+
 # Slack
 
 Slack channel specifically for students: <https://biol4110.slack.com/>
