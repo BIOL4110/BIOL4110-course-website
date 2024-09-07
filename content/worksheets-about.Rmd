@@ -12,7 +12,7 @@ These worksheets are designed to help you:
 1. Apply knowledge acquired in class to solve problems with data.
 2. Practice coding skills through self-directed autograded walkthroughs.
 
-__STAT 545A__:
+__BIOL4110__:
 
 - Percentage of final grade: _15%_
 - Number of Worksheets: _5 graded, 1 ungraded._
