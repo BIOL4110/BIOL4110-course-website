@@ -132,7 +132,7 @@ If this was easy, then try to figure out how to knit to a pdf document!
 
 ### Instructor demo: `mtcars` report 
 
-To follow along, download [demonstration .Rmd file](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/notes/notes-a03/mtcars_demonstration.Rmd) and open it in RStudio.
+To follow along, download [demonstration .Rmd file](https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/mtcars_demonstration.Rmd) and open it in RStudio.
 
 #### Exploring code chunks
 
