@@ -15,7 +15,7 @@ These worksheets are designed to help you:
 __BIOL4110__:
 
 - Percentage of final grade: _15%_
-- Number of Worksheets: _5 graded, 1 ungraded._
+- Number of Worksheets: _5 graded._
 - Deadline: _Check course outline_
 - Grading: _To get full marks for each worksheet, you must successfully answer at least 50% of all autograded questions._
 
