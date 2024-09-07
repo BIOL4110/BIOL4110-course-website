@@ -1,0 +1,34 @@
+---
+title: "MTCars Report"
+author: "Joey Bernhardt"
+date: "2024-09-07"
+output: 
+  html_document:
+    toc: yes
+    toc_float: yes
+    theme: cerulean
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Motor Trend Car Road Tests data
+
+The Motor Trend Car Road Tests (`mtcars`) data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+## Number of gears vs. transmission 
+
+```{r}
+table(mtcars$gear)
+```
+
+```{r} 
+table(mtcars$am, mtcars$gear)
+```
+
+## Horsepower vs. Mileage
+
+```{r} 
+plot(mtcars$mpg, mtcars$hp)
+```
