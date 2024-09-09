@@ -55,7 +55,7 @@ Platforms for hosting course-related content:
 
 #### Working with jupyter; working with R syntax.
 
-Worksheet A1 ([.ipynb](https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/worksheets/worksheet_a01.ipynb)) is an **autograded!** worksheet covering some R basics. Let's go through some of it. *You won't be submitting this worksheet for a grade, but future worksheets will count towards your grade.*.
+Worksheet A1 ([.ipynb](https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/worksheets/worksheet_a01.ipynb)) is an **autograded!** worksheet covering some R basics. Let's go through some of it. 
 
 #### What to do when you are stuck
 
