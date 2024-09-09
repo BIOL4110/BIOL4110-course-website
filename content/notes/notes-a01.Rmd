@@ -12,6 +12,7 @@ knitr::opts_chunk$set(fig.width = 5, fig.height = 3,
 
 1.  Become familiar with the BIOL4110 website and syllabus.
 2.  Explore basic R syntax.
+3.  Set up a repository on GitHub.
 
 ## Parallel Resources
 
@@ -46,7 +47,7 @@ Platforms for hosting course-related content:
 
 3.  A GitHub Organization for you to submit homework and projects to.
 
-4.  Courselink (for grade management and worksheet submission)
+4.  Courselink (for grade management)
 
 #### Syllabus
 
