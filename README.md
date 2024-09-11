@@ -26,13 +26,13 @@ Slack channel specifically for students: <https://biol4110.slack.com/>
 
 -   Be sure to be part of the `#announcements` channel to receive official course announcements!
 
--   Please do not send private questions to instructors separately -- use the `#general` channel instead.
+-   Please do not send private questions to instructors separately -- use the `#all-biol4110` channel instead.
 
 -   Please follow these [Slack communication guidelines](https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/slack_communication.html).
 
 ## Lecture Schedule
 
-We will be employing a lot of active learning in this course, as you learn programming best by doing! During lecture, we will work in small breakout groups on a lecture worksheet (a Jupyter notebook) that will allow us to practice together.
+We will be employing a lot of active learning in this course, as you learn programming best by doing! During lecture, we will work in small breakout groups on a lecture worksheet (a Jupyter notebook) that will allow us to practice together. Up-to-date course schedule (including due dates etc) [can be found here](https://docs.google.com/spreadsheets/d/1XCHy3uUEuU_KMlzEBVErvB13R-Ka06vargoKFpHReaE/edit?gid=0#gid=0).
 
 | Lecture | Topic                                                                                                                                     | Lecture notes                                                                                                                              | Worksheet                                                                                                           | Supplementary resources                                                                                                                        |
 |---------------|---------------|---------------|---------------|---------------|
