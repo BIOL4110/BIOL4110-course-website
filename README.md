@@ -10,6 +10,8 @@ Welcome to Ecological (Data Science) Methods! This class is designed to empower 
 
 -   use R's modern landscape.
 
+The [course outline can be found here](https://calendar.uoguelph.ca/syllabi/2024-fall/biol-4110-01-biol_4110_01/index.html).
+
 ## Teaching team
 
 Instructor: [Dr. Joey Bernhardt](https://www.bernhardtlab.org/), Assistant Professor, Department of Integrative Biology
