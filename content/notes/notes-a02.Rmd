@@ -69,7 +69,7 @@ Github is a place where repositories can live online. Being online provides us a
 
 -  All of your projects in this class will live in the [BIOL4110 Organization](https://github.com/BIOL4110).
 
-- When you watch a Github repo, you get notifications when things happen in them. So if you "Watch" the STAT 545 webpage repo, then you will get email notifications when I update the site! 
+- When you watch a Github repo, you get notifications when things happen in them. So if you "Watch" the BIOL4110 webpage repo, then you will get email notifications when I update the site! 
 
 - The Issues page on a Github repo is a forum where Github users can bring up issues related to the repository.  
 
