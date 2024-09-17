@@ -144,9 +144,7 @@ To follow along, download [demonstration .Rmd file](https://github.com/BIOL4110/
 
 4. Now try out the `DT::datatable()` function on `mtcars` in this new chunk, and knit the file (to html, ideally).
 
-5.  Add an [in-line code chunk](https://rmarkdown.rstudio.com/lesson-4.html) specifying the number of rows of the mtcars dataset in place of the hardcoded number "32 automobiles". Hint: `nrow()`.
-
-6. Fill in the document with markdown commentary for each of the code chunks! A few notes go a long way towards improving the readability of the report. 
+5. Fill in the document with markdown commentary for each of the code chunks! A few notes go a long way towards improving the readability of the report. 
 
 
 #### Exploring chunk options
