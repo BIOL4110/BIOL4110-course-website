@@ -107,14 +107,14 @@ Merge conflicts happen when we've created multiple versions of files that can't 
 
 Here is an example of something that would not cause a merge conflict: 
 
-- At 9am, my TA pulls from the BIOL 4110 repository, makes a local change to the course dashboard, and commits and pushes her changes. 
+- At 9am, our TA pulls from the BIOL 4110 repository, makes a local change to the course dashboard, and commits and pushes his changes. 
 - At 10am, I forget to pull from the BIOL 4110 repository, and start working on the Day 1 notes locally. 
-- When I commit and push, Git is a bit confused, because I wasn't working off of the "freshest" version of the BIOL 4110 repository - but since my TA and I were working on different lines of code, it will fairly seamlessly figure out that the right thing to do is to add my changes to the Day 1 notes to the current version of the BIOL 4110 repository online. 
+- When I commit and push, Git is a bit confused, because I wasn't working off of the "freshest" version of the BIOL 4110 repository - but since our TA and I were working on different lines of code, it will fairly seamlessly figure out that the right thing to do is to add my changes to the Day 1 notes to the current version of the BIOL 4110 repository online. 
 
 Here is an example of something that WOULD cause a merge conflict: 
 
-- At 9am, my TA and I both pull from the BIOL 4110 repository. 
-- At 10am, my TA  changes the front page to say "BIOL 4111", and commits/pushes those changes. 
+- At 9am, our TA and I both pull from the BIOL 4110 repository. 
+- At 10am, our TA  changes the front page to say "BIOL 4111", and commits/pushes those changes. 
 - At 11am, I change the front page (without pulling!!!) to say "BIOL 4220".
 - When I commit and push, Git doesn't know what to do. Should it make the version that says "BIOL 4111" or "BIOL 4220" the definitive version? The push will fail, and Git will tell us we need to fix the conflict and then commit the result. 
 
