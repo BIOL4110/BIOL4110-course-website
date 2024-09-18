@@ -36,7 +36,6 @@ Optional further reading to learn about the `across()` function:
 
 You have a shiny new data set - great! You might be tempted to dive right in and start making pretty graphs and fitting cool models to your data. Not so fast! In practice, it's very rare that you have the data in the exact right form to make the graph you want, or fit the model you want. You will need to start by *manipulating* your data into the right form: creating new variables, subsetting rows, renaming columns, etc. 
 
-Plus, a less exciting but nevertheless important piece of data analysis output is tables that summarize the data in some way. For example, it is extremely standard practice in biomedical and public health studies to have the first table of any journal article summarize basic characteristics of the study population, possibly stratified by exposure. While these tables are less pretty than graphs, they can nevertheless be very insightful! 
 
 An important part of data analysis is simply checking the data for things like: 
 
@@ -64,16 +63,8 @@ We think the best way to learn the basics of dplyr is to work through Worksheet 
 - Haven't attempted all of the questions on Worksheet A2? Then spend this time attempting unattempted questions. 
 - Finished attempting all of the questions? Then do the optional [R4DS Data Transformation](https://r4ds.hadley.nz/data-transform.html) reading, and maybe even do some of the exercises for extra practice. 
 
-Put any questions you have about the worksheet questions or about data manipulation in general in the Google Doc posted to Canvas. 
+Put any questions you have about the worksheet questions or about data manipulation in general to the all-biol4110 Slack channel.
 
 ### Remaining time in Class 1
 
-Teaching team will go over the questions in the Google Doc. 
-
-## Class 2: FEV Case Study
-
-We will get a flavour for how you might use dplyr in the wild and get in even more dplyr practice by working through [a case study centred on a biomedical data set](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/notes/supp-a04.Rmd).
-
-By yourself or in small groups, work through the exercises in the case study. Teaching team will walk around and answer questions and chat about anything data manipulation related. 
-
-We will conclude class by going over instructor solutions.
+Teaching team will go over the questions in Slack. 
