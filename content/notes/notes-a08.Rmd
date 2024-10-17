@@ -355,7 +355,7 @@ The `rate` column contains the values of two variables: case counts and populati
 ```
 
 The `col` argument specifies the column we want to separate, 
-and the `into` argument specifies the names of the new columns. The `sep` argument (not specified here) specifies where we want to cut. The default is pretty clever - it separates at any non-alphanumeric value. (How this is accomplished involves *regular expressions*, which are very useful when working with character data. We will learn more about regular expressions in STAT 545B. )
+and the `into` argument specifies the names of the new columns. The `sep` argument (not specified here) specifies where we want to cut. The default is pretty clever - it separates at any non-alphanumeric value. (How this is accomplished involves *regular expressions*, which are very useful when working with character data. )
 
 ## Your turn: learning to use tidyr
 
