@@ -137,6 +137,33 @@ household %>%
 table3
 
 
+table3b <- table3 %>% 
+  separate(col = rate,
+           into = c("cases", "population size"))
+
+
+
+
+View(table3b)
+
+
+
+
 (table5 <- table3 %>%
     separate(col = rate, 
     into = c("cases", "population")))
+
+
+library(gapminder)
+
+
+View(gapminder)
+
+
+gapminder %>% 
+  unite(c("country", "continent"), sep = "_", col = "country_continent_combo", remove = FALSE) %>% 
+  head()
+
+
+gapminder %>% 
+  separate(col = year, into = c("century", "decade"), sep = -1) %>% View
