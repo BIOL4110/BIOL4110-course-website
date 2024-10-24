@@ -223,7 +223,7 @@ Don't be surprised if there is no function to extract what you want. If that's t
 
 ### Manually Extracting Information
 
-If you can't extract model information from built-in functions like `coef()` or `sigma()`, you can manually dig in to the model object. In most cases, a model object is just a list in disguise! (Lists are discussed in STAT 545B). You can therefore extract information like you would with any other list.
+If you can't extract model information from built-in functions like `coef()` or `sigma()`, you can manually dig in to the model object. In most cases, a model object is just a list in disguise! You can therefore extract information like you would with any other list.
 
 To help figure out what's in the list, use the `names()` function. Here are all the entries in the `lm()` object we fit earlier:
 
