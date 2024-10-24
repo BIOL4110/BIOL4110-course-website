@@ -319,16 +319,7 @@ ggplot(gapminder_Zimbabwe, aes(year,lifeExp)) +
 
 We think the best way to learn the basics from here is to work through the last part of Worksheet A4. 
 
-## In-class Schedule 
 
-### First part
-
-- Attempt questions on the last part of Worksheet A4
-- Get answers about questions you got stuck on 
-
-### Second part
-
-While this is not a modelling class, let's get a sense of where modelling would fit into a real data analysis by working through [the final part of the FEV case study](https://raw.githubusercontent.com/UBC-STAT/stat545.stat.ubc.ca/master/content/notes/supp-a09.Rmd). 
 
 ### Attribution
 
