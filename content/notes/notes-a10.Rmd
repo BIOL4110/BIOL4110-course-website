@@ -76,9 +76,7 @@ Now's your chance to ask about any questions you got stuck on and get them answe
 
 ### Third part: Dates and/or Times 
 
-Often you will need to work with dates and times in your data. For example, we could have had a variable in the FEV data set that contains the date of each patient visit. 
-
-Dates and times seem simple, but they are actually one of the most complicated things you will encounter in data analysis. 
+Often you will need to work with dates and times in your data. Dates and times seem simple, but they are actually one of the most complicated things you will encounter in data analysis. 
 
 ## Test Your Understanding
 
@@ -113,7 +111,7 @@ c(date, dt)
 
 - Write down today's date. (Don't peek at your neighbours!)
 
-- Copy what you wrote down into the Google Sheets link on Canvas. 
+- Copy what you wrote down into the general channel on Slack. 
 
 We'll look at the results together. Expect pain ... 
 

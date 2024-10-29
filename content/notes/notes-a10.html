@@ -414,7 +414,7 @@ the numbers 1, 2, and 3 and the levels.</p>
 <p>This is not immediately obvious, because R will print factors using
 the character string levels rather than the numbers that it stores:</p>
 <pre class="r"><code>penguins %&gt;% slice_sample(n=10) %&gt;% pull(species)</code></pre>
-<pre><code>##  [1] Adelie    Adelie    Adelie    Gentoo    Adelie    Chinstrap Gentoo   
+<pre><code>##  [1] Adelie    Adelie    Gentoo    Adelie    Adelie    Gentoo    Adelie   
 ##  [8] Chinstrap Adelie    Adelie   
 ## Levels: Adelie Chinstrap Gentoo</code></pre>
 <p>This dual nature of factors creates a whole slew of hidden traps and
@@ -452,11 +452,9 @@ them answered by the instructor!</p>
 </div>
 <div id="third-part-dates-andor-times" class="section level3">
 <h3>Third part: Dates and/or Times</h3>
-<p>Often you will need to work with dates and times in your data. For
-example, we could have had a variable in the FEV data set that contains
-the date of each patient visit.</p>
-<p>Dates and times seem simple, but they are actually one of the most
-complicated things you will encounter in data analysis.</p>
+<p>Often you will need to work with dates and times in your data. Dates
+and times seem simple, but they are actually one of the most complicated
+things you will encounter in data analysis.</p>
 </div>
 </div>
 <div id="test-your-understanding" class="section level2">
@@ -489,8 +487,8 @@ c(date, dt)</code></pre>
 <ul>
 <li><p>Write down today’s date. (Don’t peek at your
 neighbours!)</p></li>
-<li><p>Copy what you wrote down into the Google Sheets link on
-Canvas.</p></li>
+<li><p>Copy what you wrote down into the general channel on
+Slack.</p></li>
 </ul>
 <p>We’ll look at the results together. Expect pain …</p>
 <hr />
