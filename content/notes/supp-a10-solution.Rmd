@@ -18,6 +18,7 @@ There's lots to explore in this data set, and lots of variables! We'll work with
 ```{r, message = FALSE} 
 library(tidyverse)
 library(nycflights13)
+library(lubridate)
 
 flights_demo <- flights %>% 
   select(year, month, day, hour, minute, flight, carrier)
