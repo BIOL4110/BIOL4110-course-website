@@ -414,8 +414,8 @@ the numbers 1, 2, and 3 and the levels.</p>
 <p>This is not immediately obvious, because R will print factors using
 the character string levels rather than the numbers that it stores:</p>
 <pre class="r"><code>penguins %&gt;% slice_sample(n=10) %&gt;% pull(species)</code></pre>
-<pre><code>##  [1] Adelie    Adelie    Gentoo    Adelie    Adelie    Gentoo    Adelie   
-##  [8] Chinstrap Adelie    Adelie   
+<pre><code>##  [1] Chinstrap Gentoo    Adelie    Adelie    Chinstrap Chinstrap Chinstrap
+##  [8] Adelie    Adelie    Adelie   
 ## Levels: Adelie Chinstrap Gentoo</code></pre>
 <p>This dual nature of factors creates a whole slew of hidden traps and
 headaches, especially for new useRs!</p>
@@ -511,7 +511,8 @@ navigate time zones.</p>
 <div id="nyc-flights-case-study" class="section level2">
 <h2>NYC Flights Case Study</h2>
 <p>We’ll show off how to use the <code>lubridate</code> package in the
-tidyverse to work with date variables in datasets in this <a href="/notes/supp-a10-solution">NYC Flights case study</a>.</p>
+tidyverse to work with date variables in datasets in this <a href="https://htmlpreview.github.io/?https://github.com/BIOL4110/BIOL4110-course-website/blob/main/content/notes/supp-a10-solution.html">NYC
+Flights case study</a>.</p>
 <p>For the sake of time, we’ll just go over the solutions together,
 instead of having you attempt exercises on your own first. We think this
 will be sufficient to get a hang of the basics of
