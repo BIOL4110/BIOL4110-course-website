@@ -2,7 +2,7 @@
 
 # Welcome!
 
-Welcome to Ecological (Data Science) Methods! This class is designed to empower students to wrangle, visualize and analyse ecological data using modern data analysis tools. Student will learn how to:
+Welcome to Ecological (Data Science) Methods! This class is designed to empower students to wrangle, visualize and analyse ecological data using modern data analysis tools. Students will learn how to:
 
 -   explore, clean, visualize and analyse ecological data
 
