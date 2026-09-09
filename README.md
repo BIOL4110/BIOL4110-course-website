@@ -16,7 +16,7 @@ The [course outline can be found here](https://calendar.uoguelph.ca/syllabi/2026
 
 Instructor: [Dr. Joey Bernhardt](https://www.bernhardtlab.org/), Assistant Professor, Department of Integrative Biology
 
-Teaching assistant: [Jelany Duali](https://www.uoguelph.ca/ib/node/1915), PhD student, Department of Integrative Biology
+Teaching assistant: Jelany Duali, Koya Basso, Amaan Leacock, Anibal Castillo
 
 Attribution and acknowledgments: Much the course material is adapted from [STAT545](https://stat545.com/), the [STAT545 course at UBC](https://stat545.stat.ubc.ca/), and the [Data Carpentry for Biologists course](https://datacarpentry.org/semester-biology/) developed by Ethan White and Zachary Brym, Matt Pennell.
 
