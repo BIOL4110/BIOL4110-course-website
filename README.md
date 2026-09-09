@@ -10,7 +10,7 @@ Welcome to Ecological (Data Science) Methods! This class is designed to empower 
 
 -   use R's modern landscape.
 
-The [course outline can be found here](https://calendar.uoguelph.ca/syllabi/2024-fall/biol-4110-01-biol_4110_01/index.html).
+The [course outline can be found here](https://calendar.uoguelph.ca/syllabi/2026-fall/biol-4110-01-biol_4110_01/index.html).
 
 ## Teaching team
 
