@@ -191,7 +191,7 @@ The final report is written like a short scientific paper. Submit one report per
 2. **Abstract** (max 250 words): question, data, approach, main results, and why they matter.
 3. **Introduction:** broader ecological context, a critical summary of relevant literature, the gap your study fills, your question, and your hypotheses with predictions. Ideally, give two or more competing or complementary hypotheses.
 4. **Methods:** data source (with citation), what was measured and how, spatial and temporal scope, unit of replication and sample size, data cleaning decisions, statistical models (response, predictors, model type, random effects if any), how you checked assumptions, and the R version and main packages used.
-5. **Results:** describe the patterns with effect sizes, uncertainty (confidence intervals or standard errors) and test statistics. Refer to every figure and table. Do not interpret here.
+5. **Results:** describe the patterns with effect sizes, uncertainty (confidence intervals or standard errors) and test statistics. Refer to every figure and table.
 6. **Discussion:** what the results mean for each hypothesis, how they compare with earlier studies, alternative explanations, limitations of the data and methods, and the broader significance.
 7. **References.**
 8. **Contribution statement:** one or two sentences per member describing what they did.
