@@ -1,5 +1,6 @@
 # BIOL 4110 Group Project: Ecological Data Analysis
 
+
 ## Overview
 
 In groups of five, you will pose an ecological question, find a real dataset that can answer it, and carry out a complete, reproducible analysis in R. You will share your work three times: a proposal presentation on October 22 (all sections, in lab time), a final presentation (in class time: section 1 Nov 26, section 2 Dec 1), and a final written report (all due Dec 11). All of these are done collectively in your group.
