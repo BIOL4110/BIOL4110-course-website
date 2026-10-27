@@ -11,6 +11,8 @@ head(drinks_tbl1)
 
 
 library(bakeoff)
+View(ratings)
+
 
 ratings_tbl1 <- ratings %>% 
   mutate(ep_id = row_number()) %>% 
@@ -167,3 +169,41 @@ gapminder %>%
 
 gapminder %>% 
   separate(col = year, into = c("century", "decade"), sep = -1) %>% View
+
+
+
+library(palmerpenguins)
+
+View(penguins)
+library(gapminder)
+
+
+### see if flipper length on two islands, Dream and Biscoe are correlated over time
+unique(penguins$year)
+
+penguins_long <- penguins |>
+  drop_na() |>
+  select(species, island,
+         bill_length_mm, bill_depth_mm,
+         flipper_length_mm, body_mass_g) |> 
+  pivot_longer(
+    cols      = bill_length_mm:body_mass_g, # columns to collapse into rows
+    names_to  = "measurement",              # new column: holds old column names
+    values_to = "value"                     # new column: holds the numeric values
+  )
+
+
+penguins_long |> 
+  ggplot(aes(x = species, y = value, fill = species)) +
+  geom_boxplot() +
+  facet_wrap( ~ measurement, scales = "free_y") +
+  theme(legend.position = "none")
+
+
+penguins_long |>
+  ggplot(aes(x = species, y = value, fill = species)) +
+  geom_boxplot() +
+  facet_wrap(~measurement, scales = "free_y") +
+  labs(title = "All penguin measurements by species",
+       x = NULL, y = NULL) +
+  theme(legend.position = "none")
