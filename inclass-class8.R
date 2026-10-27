@@ -207,3 +207,9 @@ penguins_long |>
   labs(title = "All penguin measurements by species",
        x = NULL, y = NULL) +
   theme(legend.position = "none")
+
+
+
+### now gapminder 
+
+
