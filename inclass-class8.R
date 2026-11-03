@@ -212,4 +212,45 @@ penguins_long |>
 
 ### now gapminder 
 
+gap_subset <- gapminder |> 
+  filter(country %in% c("Canada", "Mexico", "United States"),
+         year >= 2002) |> 
+  select(country, year, lifeExp)
 
+gap_subset
+
+gap_wide <- gap_subset |> 
+  pivot_wider(names_from = year,
+              values_from = lifeExp)
+gap_wide
+
+
+gap_wide |> 
+  ggplot(aes(x = year, y = lifeExp)) + geom_point()
+
+
+gap_long1 <- gap_wide |> 
+  pivot_longer(cols = c(`2002`, `2007`),
+               names_to = "year",
+               values_to = "lifeExp") |> 
+  mutate(year = as.integer(year))
+  
+
+str(gap_long1)
+
+
+gap_wide |>
+  pivot_longer(
+    cols            = -country,                 # pivot everything except 'country'
+    names_to        = "year",                   # old column names become year values
+    names_transform = list(year = as.integer),  # "2002" → 2002 (integer)
+    values_to       = "lifeExp"
+  )
+
+
+eg1 <- penguins |> 
+  pivot_longer(cols = starts_with("bill"),
+               names_to = "measurement_type",
+               values_to = "value")
+
+str(eg1)
