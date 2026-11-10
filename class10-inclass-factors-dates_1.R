@@ -8,7 +8,6 @@
 ####   Wrap-up ..........................................  4 min
 ####
 #### How to read this script
-####   # SAY:  talking point to say out loud (no need to type it)
 ####   # ASK:  question for the class BEFORE you run the next line
 ####   YOUR TURN blocks: give students ~4 min, then live-code the solution
 ####   Lines marked ERROR ON PURPOSE are meant to fail. Run them anyway!
@@ -27,7 +26,7 @@ library(nycflights13)
 # PART 1: FACTORS (palmerpenguins)
 # =========================================================================
 
-# SAY: A factor is how R stores a CATEGORICAL variable: a variable that can
+# : A factor is how R stores a CATEGORICAL variable: a variable that can
 #      only take a fixed, known set of values (the "levels").
 
 
@@ -50,7 +49,7 @@ three_birds
 typeof(three_birds)
 as.integer(three_birds)
 # ASK: Gentoo shows up 2nd here. Why is it stored as a 3?
-# SAY: Levels default to ALPHABETICAL order. R prints the labels,
+# : Levels default to ALPHABETICAL order. R prints the labels,
 #      but stores the numbers.
 
 
@@ -100,9 +99,9 @@ penguins %>%
   mutate(species = fct_reorder(species, bill_length_mm, .fun = median)) %>%
   ggplot(aes(x = species, y = bill_length_mm)) +
   geom_boxplot()
-# SAY: Read it as "reorder species by the median of bill_length_mm".
+# : Read it as "reorder species by the median of bill_length_mm".
 #      Chinstrap jumped past Gentoo. Add .desc = TRUE to flip it.
-# SAY: We dropped NAs first so median() has nothing missing to choke on.
+# : We dropped NAs first so median() has nothing missing to choke on.
 
 
 # fct_relevel(): move specific level(s) to the front, by hand
@@ -110,7 +109,7 @@ penguins %>%
   mutate(species = fct_relevel(species, "Gentoo")) %>%
   pull(species) %>%
   levels()
-# SAY: Handy for putting a control/reference group first.
+# : Handy for putting a control/reference group first.
 #      Models like lm() use the FIRST level as the baseline.
 
 
@@ -147,7 +146,7 @@ penguins %>%
 penguins %>%
   group_by(species) %>%
   summarise(mean_mass_g = mean(body_mass_g, na.rm = TRUE))
-# SAY: Adelie and Chinstrap are about the same size; Gentoo is much bigger.
+# : Adelie and Chinstrap are about the same size; Gentoo is much bigger.
 
 penguins %>%
   mutate(size_group = fct_collapse(species,
@@ -179,7 +178,7 @@ penguins %>%
   ggplot(aes(x = species)) +
   geom_bar() +
   scale_x_discrete(drop = FALSE)
-# SAY: Useful to show "we looked, and found zero".
+# Useful to show "we looked, and found zero".
 
 
 # Missing values are NOT a level
@@ -202,7 +201,7 @@ penguins %>%
          sex = fct_infreq(sex)) %>%
   ggplot(aes(x = sex)) +
   geom_bar()
-# SAY: Order matters: recode first, then add the Unknown level,
+# : Order matters: recode first, then add the Unknown level,
 #      then reorder. Each line of mutate() works on the result of the last.
 
 
@@ -229,7 +228,7 @@ factor(size_typo, levels = c("small", "medium", "large"))
 
 # forcats::fct() is stricter and tells you what went wrong
 fct(size_typo, levels = c("small", "medium", "large"))   # ERROR ON PURPOSE
-# SAY: An error now is better than a silent NA later.
+# : An error now is better than a silent NA later.
 
 
 
@@ -258,18 +257,18 @@ mdy("Oct 1 2013")
 mdy("October 1st, 2013")
 dmy("1/10/2013")
 ymd("2013-10-01")
-# SAY: All four are the same Date. lubridate figures out the separators
+# All four are the same Date. lubridate figures out the separators
 #      and month names; you only tell it the order.
 
 d <- mdy("Oct 1 2013")
 class(d)
 d + 1                              # now math works (in days)
 
-# ASK: What date is "01/10/2013"?
+# What date is "01/10/2013"?
 mdy("01/10/2013")
 dmy("01/10/2013")
-# SAY: Ambiguous! You must know how it was recorded.
-#      Record dates as yyyy-mm-dd (ISO 8601) and future-you says thanks.
+# Ambiguous! You must know how it was recorded.
+#      Record dates as yyyy-mm-dd (ISO 8601) and future-you s thanks.
 
 
 # Date-times: add _hm or _hms
@@ -278,19 +277,19 @@ ymd_hm("2013-10-01 09:00")
 
 sched <- ymd_hm("2013-10-01 09:00", tz = "America/New_York")
 sched
-# SAY: Time zones are named "Continent/City". Guelph is "America/Toronto".
+# : Time zones are named "Continent/City". Guelph is "America/Toronto".
 #      OlsonNames() lists them all.
 
 # with_tz(): same instant, shown on a different clock
 with_tz(sched, "America/Vancouver")
 with_tz(sched, "Antarctica/Palmer")    # where the penguins live!
 sched == with_tz(sched, "Antarctica/Palmer")
-# SAY: TRUE, because it's the same moment in time.
+# : TRUE, because it's the same moment in time.
 
 # force_tz(): same clock time, but in a different zone = a DIFFERENT instant
 force_tz(sched, "Antarctica/Palmer")
 sched == force_tz(sched, "Antarctica/Palmer")
-# SAY: Use force_tz() only when the time zone was recorded wrong.
+# : Use force_tz() only when the time zone was recorded wrong.
 
 
 
@@ -311,7 +310,7 @@ flights_demo <- flights_demo %>%
 flights_demo %>%
   select(year, month, day, hour, minute, sched_dep_dt) %>%
   head()
-# SAY: make_datetime() defaults to UTC, so always give it a tz.
+# : make_datetime() defaults to UTC, so always give it a tz.
 
 
 # The ACTUAL departure time is stored as one number: HHMM
@@ -338,7 +337,7 @@ flights_demo <- flights_demo %>%
 flights_demo %>%
   select(sched_dep_dt, dep_time, dep_dt) %>%
   head()
-# SAY: Cancelled flights have dep_time = NA, so dep_dt is NA too. Good!
+# : Cancelled flights have dep_time = NA, so dep_dt is NA too. Good!
 
 
 
@@ -353,7 +352,7 @@ class(actual - sched)               # a "difftime"
 
 # ASK: What happens if it leaves the next day instead?
 ymd_hm("2013-10-02 11:00", tz = "America/New_York") - sched
-# SAY: difftime picks its own units (mins? days?). Awkward in a column!
+# : difftime picks its own units (mins? days?). Awkward in a column!
 
 # Durations always count seconds
 as.duration(actual - sched)
@@ -376,7 +375,7 @@ flights_demo %>%
 flights_demo %>%
   filter(my_delay != dep_delay) %>%
   nrow()
-# SAY: These flights left after midnight, but year/month/day is the
+# : These flights left after midnight, but year/month/day is the
 #      SCHEDULED date. So our dep_dt is a day too early.
 #      Dates are hard; always check a new column against something you trust.
 
@@ -389,7 +388,7 @@ flights_demo %>%
 flights_demo %>%
   filter(dep_delay - my_delay == 23 * 60) %>%
   select(sched_dep_dt, dep_time, dep_delay, my_delay)
-# SAY: All on March 10, 2013: the night the clocks sprang forward.
+# : All on March 10, 2013: the night the clocks sprang forward.
 #      That "day" was only 23 hours long!
 
 
@@ -398,7 +397,7 @@ before_dst <- ymd_hm("2013-03-09 13:00", tz = "America/New_York")
 
 before_dst + ddays(1)    # duration: exactly 86,400 seconds later
 before_dst + days(1)     # period: same clock time tomorrow
-# SAY: Durations are a stopwatch (exact seconds).
+# : Durations are a stopwatch (exact seconds).
 #      Periods are a calendar (human units: "same time tomorrow").
 
 # This clock time never existed in New York:
@@ -406,7 +405,7 @@ ymd_hm("2013-03-10 02:30", tz = "America/New_York")
 
 
 # Fixing the overnight flights
-# SAY: The earliest any flight left was 43 min early, so if dep_dt is more
+# : The earliest any flight left was 43 min early, so if dep_dt is more
 #      than an hour BEFORE the scheduled time, it must have left the next day.
 # ASK: Should we add ddays(1) or days(1)?
 flights_demo <- flights_demo %>%
@@ -417,7 +416,7 @@ flights_demo <- flights_demo %>%
 flights_demo %>%
   filter(my_delay_fixed != dep_delay) %>%
   nrow()
-# SAY: Zero mismatches. Swap in ddays(1) and the 4 DST flights break.
+# : Zero mismatches. Swap in ddays(1) and the 4 DST flights break.
 
 # If time: periods respect the calendar, sometimes awkwardly
 ymd("2013-01-31") + months(1)       # there is no Feb 31!
@@ -433,12 +432,12 @@ ymd("2013-01-31") %m+% months(1)    # roll back to the last real day
 
 # 1. This gives a factor with levels a to f.
 c(factor(c("a", "b", "c")), factor(c("d", "e", "f")))
-# SAY: TRUE in R >= 4.1. Older R gave the integer codes 1 2 3 1 2 3!
+# : TRUE in R >= 4.1. Older R gave the integer codes 1 2 3 1 2 3!
 #      forcats::fct_c() is the safe choice either way.
 
 # 2. This gives a Date (not a date-time).
 c(ymd("2020-10-13"), ymd_hms("2020-10-13 09:30:00"))
-# SAY: TRUE. c() follows the FIRST element, so the 9:30 time is dropped
+# TRUE. c() follows the FIRST element, so the 9:30 time is dropped
 #      silently. Swap the order and you get a date-time instead.
 
 # Recap
