@@ -37,6 +37,7 @@ ymd_hms("2017-01-31 20:11:59")
 
 
 new_sched_dep_time <- mdy_hm("Oct 1 2013 9:00", tz = "America/New_York")
+
 (new_sched_dep_time <- mdy_hm("Oct 1 2013 9:00", tz = "America/New_York"))
 
 
@@ -76,11 +77,10 @@ new_thing/dminutes(1)
 new_sched_dep_time <- ymd_hm("2013 October 1 9:00", tz = "America/New_York")
 new_dep_time <- ymd_hm("2013 Oct 1 9:15", tz = "America/New_York")
 str(new_dep_time)
-
-new_dep_time - 
-
+str(new_sched_dep_time)
 
 
+### this won't work
  "2013 Oct 1 9:15" - "2013 October 1 9:00"
 
 
